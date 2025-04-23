@@ -1,6 +1,6 @@
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 
-function App() {
+function Footer() {
   return (
     <div className="grid grid-cols-3 items-center bg-zinc-800 w-full px-16 py-4">
       <p className="text-gray-400 justify-self-start">© 2025 Gavin Normand</p>
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Footer;

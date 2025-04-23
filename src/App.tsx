@@ -1,12 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/home'
+import About from './pages/about'
+import Contact from './pages/contact'
+import Projects from './pages/projects'
+import Experience from './pages/experience'
+import Nav from './components/nav'
+import Footer from './components/footer'
+
 function App() {
   return (
-    <div className="bg-zinc-700 h-screen">
-      <h1>
-        Hello! My name is Gavin Normand, if you need to reach out to me then
-        email me at normandgavin@gmail.com!
-      </h1>
-    </div>
-  );
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/experience" element={<Experience />} />
+      </Routes>
+      <Footer />
+    </Router>
+  )
 }
 
-export default App;
+export default App
