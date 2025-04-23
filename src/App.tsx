@@ -1,25 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className='text-red-50'>Vite + React and Gavin Normand</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="bg-zinc-700 h-screen">
+      <h1>
+        Hello! My name is Gavin Normand, if you need to reach out to me then
+        email me at normandgavin@gmail.com!
+      </h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
