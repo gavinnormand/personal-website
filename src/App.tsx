@@ -3,7 +3,7 @@ import Home from './pages/home'
 import About from './pages/about'
 import Contact from './pages/contact'
 import Projects from './pages/projects'
-import Experience from './pages/experience'
+import Experiences from './pages/experiences'
 import Skills from './pages/skills'
 import Nav from './components/nav'
 import Footer from './components/footer'
@@ -17,7 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<Experience />} />
+        <Route path="/experiences" element={<Experiences />} />
         <Route path="/skills" element={<Skills />} />
       </Routes>
       <Footer />
