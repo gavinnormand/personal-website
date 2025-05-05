@@ -2,8 +2,8 @@ import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 
 function Footer() {
   return (
-    <div className="grid grid-cols-3 items-center bg-zinc-800 w-full px-16 py-4">
-      <p className="text-gray-400 justify-self-start">© 2025 Gavin Normand</p>
+    <div className="grid grid-cols-3 items-center bg-menus w-full px-16 py-4">
+      <p className="text-icon-hover justify-self-start">© 2025 Gavin Normand</p>
       <div className="flex flex-row justify-center items-center">
         <a
           className="mx-3"
@@ -12,7 +12,7 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="E-Mail"
         >
-          <SiGmail className="hover:text-gray-300 h-8 w-8" />
+          <SiGmail className="text-icon hover:text-icon-hover h-8 w-8" />
         </a>
         <a
           className="mx-3"
@@ -21,7 +21,7 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <SiLinkedin className="hover:text-gray-300 h-8 w-8" />
+          <SiLinkedin className="text-icon hover:text-icon-hover h-8 w-8" />
         </a>
         <a
           className="mx-3"
@@ -30,10 +30,12 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <SiGithub className="hover:text-gray-300 h-8 w-8" />
+          <SiGithub className="text-icon hover:text-icon-hover h-8 w-8" />
         </a>
       </div>
-      <p className="text-gray-400 justify-self-end">Made with ❤️ by Gavin Normand</p>
+      <p className="text-icon-hover justify-self-end">
+        Made with ❤️ by Gavin Normand
+      </p>
     </div>
   );
 }
