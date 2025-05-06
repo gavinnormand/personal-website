@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-interface TypingCarouselProps {
+interface TypingWriterProps {
   words: string[];
 }
 
@@ -8,7 +8,7 @@ const typingSpeed = 100;
 const deletingSpeed = 50;
 const pauseTime = 1000;
 
-const TypingCarousel: React.FC<TypingCarouselProps> = ({
+const TypeWriter: React.FC<TypingWriterProps> = ({
   words,
 }) => {
   const [text, setText] = useState("");
@@ -55,4 +55,4 @@ const TypingCarousel: React.FC<TypingCarouselProps> = ({
   );
 };
 
-export default TypingCarousel;
+export default TypeWriter;

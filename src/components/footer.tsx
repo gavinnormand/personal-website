@@ -2,7 +2,7 @@ import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 
 function Footer() {
   return (
-    <div className="grid grid-cols-3 items-center bg-menus w-full px-16 py-4">
+    <div className="grid grid-cols-3 items-center bg-menus dark:bg-menus-dark w-full px-16 py-4">
       <p className="text-icon-hover justify-self-start">© 2025 Gavin Normand</p>
       <div className="flex flex-row justify-center items-center">
         <a

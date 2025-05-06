@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  //darkMode: "class",
+  darkMode: "class",
   theme: {
     extend: {
       animation: {
@@ -27,8 +27,8 @@ export default {
           dark: "#EFEFEF",
         },
         secondary: {
-          DEFAULT: "#444444",
-          dark: "#AAAAAA",
+          DEFAULT: "#333333",
+          dark: "#DDDDDD",
         },
         accent: {
           DEFAULT: "#2D936C",

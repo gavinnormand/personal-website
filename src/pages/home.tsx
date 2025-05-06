@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import Profile from "../assets/profile.png";
-import Typewriter from "../components/typewriter";
+import TypeWriter from "../components/typewriter";
 
 const titles = [
   " programmer",
@@ -14,21 +15,27 @@ const titles = [
 
 function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-110px)] bg-background">
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-128px)] bg-background dark:bg-background-dark">
       <img
-        className="my-8 rounded-full border-4 border-menus shadow-2xl"
+        className="my-8 rounded-full border-4 border-menus dark:border-menus-dark shadow-xl"
         src={Profile}
         alt="Profile"
       />
-      <h1 className="inline-flex text-4xl font-bold text-primary">
+      <h1 className="inline-flex text-4xl font-bold text-primary dark:text-primary-dark">
         Hi, I'm <div className="text-accent px-2">Gavin Normand!</div>
       </h1>
-      <p className="mt-4 text-lg text-secondary">
-        I am a<Typewriter words={titles} />
+      <p className="mt-4 text-lg text-secondary dark:text-secondary-dark">
+        I am a<TypeWriter words={titles} />
       </p>
-      <p className="mt-2 text-lg text-secondary">
+      <p className="mt-2 text-lg text-secondary dark:text-secondary-dark">
         Please feel free to explore my projects, experiences, and get in touch!
       </p>
+      <Link
+              className="m-4 border-4 p-4 rounded-2xl border-menus dark:border-menus-dark bg-accent text-xl"
+              to={"/about"}
+            >
+              Learn More About Me!
+            </Link>
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { FileUser, Code } from "lucide-react";
+import { Code } from "lucide-react";
+import ThemeToggle from "./themeToggle";
 
 function Nav() {
   return (
     <nav>
-      <div className="grid grid-cols-3 items-center bg-menus py-2 px-14">
+      <div className="grid grid-cols-3 items-center bg-menus dark:bg-menus-dark py-4 px-14">
         <Link
           className="inline-flex justify-self-start text-icon hover:text-icon-hover"
           to={"/"}
@@ -12,7 +13,7 @@ function Nav() {
           <Code className="mr-3" /> Gavin Normand
         </Link>
         <div className="inline-flex justify-center">
-          <div className="pb-1 border-b-2 border-white">
+          <div className="pb-1.5 border-b-2 border-white">
             <Link
               className="text-icon hover:text-icon-hover mx-3"
               to={"/about"}
@@ -37,16 +38,18 @@ function Nav() {
             >
               Contact
             </Link>
-          </div>
-        </div>
-        <a
-          className="inline-flex mx-3 justify-self-end text-icon hover:text-icon-hover"
+            <a
+          className="text-icon hover:text-icon-hover mx-3"
           href="https://drive.google.com/file/d/17GSW2EOedPHEzP3nzrnQzRRjRvhObpzb/view?usp=sharing"
           target="_blank"
         >
           Resume
-          <FileUser className="ml-3" />
         </a>
+          </div>
+        </div>
+        <div className="inline-flex justify-self-end">
+        <ThemeToggle />
+        </div>
       </div>
     </nav>
   );

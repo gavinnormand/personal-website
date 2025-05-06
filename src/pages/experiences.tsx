@@ -1,5 +1,5 @@
 function Experiences() {
-    return <h1 className="bg-zinc-500">Experiences</h1>;
+    return <h1 className="bg-background">Experiences</h1>;
   }
   
   export default Experiences;
