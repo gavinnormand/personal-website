@@ -8,9 +8,7 @@ const typingSpeed = 100;
 const deletingSpeed = 50;
 const pauseTime = 1000;
 
-const TypeWriter: React.FC<TypingWriterProps> = ({
-  words,
-}) => {
+const TypeWriter: React.FC<TypingWriterProps> = ({ words }) => {
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
@@ -19,33 +17,24 @@ const TypeWriter: React.FC<TypingWriterProps> = ({
   useEffect(() => {
     const currentWord = words[wordIndex];
 
-    const timeout = setTimeout(
-      () => {
-        if (isTyping && text.length < currentWord.length) {
-          setText(currentWord.substring(0, text.length + 1));
-          setTime(typingSpeed);
-        } else if (!isTyping && text.length > 0) {
-          setText(currentWord.substring(0, text.length - 1));
-          setTime(deletingSpeed);
-        } else if (isTyping) {
-          setIsTyping(false);
-          setTime(pauseTime);
-        } else {
-          setIsTyping(true);
-          setWordIndex((wordIndex + 1) % words.length);
-        }
-      },
-      time
-    );
+    const timeout = setTimeout(() => {
+      if (isTyping && text.length < currentWord.length) {
+        setText(currentWord.substring(0, text.length + 1));
+        setTime(typingSpeed);
+      } else if (!isTyping && text.length > 0) {
+        setText(currentWord.substring(0, text.length - 1));
+        setTime(deletingSpeed);
+      } else if (isTyping) {
+        setIsTyping(false);
+        setTime(pauseTime);
+      } else {
+        setIsTyping(true);
+        setWordIndex((wordIndex + 1) % words.length);
+      }
+    }, time);
 
     return () => clearTimeout(timeout);
-  }, [
-    text,
-    isTyping,
-    words,
-    wordIndex,
-    time,
-  ]);
+  }, [text, isTyping, words, wordIndex, time]);
 
   return (
     <span>

@@ -13,7 +13,7 @@ function Nav() {
           <Code className="mr-3" /> Gavin Normand
         </Link>
         <div className="inline-flex justify-center">
-          <div className="pb-1.5 border-b-2 border-white">
+          <div className="pb-1.5 border-b-2 border-accent">
             <Link
               className="text-icon hover:text-icon-hover mx-3"
               to={"/about"}

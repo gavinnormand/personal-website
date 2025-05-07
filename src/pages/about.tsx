@@ -12,6 +12,7 @@ import Suit from "../assets/aboutMe/Suit.jpg";
 import Tree from "../assets/aboutMe/Tree.jpg";
 import Washington from "../assets/aboutMe/Washington.jpg";
 import RecentSongs from "../components/recentSongs";
+import TagList from "../components/tagList";
 
 const images = [
   { src: Capitol, alt: "Me in front of the Capitol Building!" },
@@ -27,14 +28,41 @@ const images = [
   { src: Washington, alt: "Me holding the Washington Monument, REAL" },
 ];
 
+const languages = [
+  "Python",
+  "Java",
+  "JavaScript",
+  "TypeScript",
+  "C",
+  "C#",
+  "C++",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Racket",
+];
+
+const frameworksAndTools = [
+  "React",
+  "Node.js",
+  "Git",
+  "Flask",
+  "Firebase",
+  "JUnit",
+  "Docker",
+  "PostgreSQL",
+  "Prisma",
+  "Bun",
+];
+
 function About() {
   return (
-    <div className="grid grid-cols-2 bg-background dark:bg-background-dark">
+    <div className="grid grid-cols-2 py-8 bg-background dark:bg-background-dark">
       <div className="flex flex-col items-start ml-16 text-primary dark:text-primary-dark">
-        <h1 className="text-4xl pt-8 font-semibold text-primary dark:text-primary-dark">
+        <h1 className="text-4xl font-semibold text-accent dark:text-accent">
           About Me
         </h1>
-        <p className="text-l py-4 text-secondary dark:text-secondary-dark">
+        <p className="text-l pt-4 text-primary dark:text-primary-dark">
           I'm a second-year student at Northeastern pursuing a bachelor's degree
           in Computer Science with a concentration in Software and a minor in
           Mathematics. I am originally from Millstone, New Jersey before moving
@@ -42,9 +70,14 @@ function About() {
           biking, skiing, playing tennis, running with my dogs, and overall just
           spending quality time with friends and family.
         </p>
+        <TagList title="Languages" tags={languages} />
+        <TagList title="Frameworks and Tools" tags={frameworksAndTools} />
+      </div>
+      <div className="flex flex-col items-center ml-16 text-primary dark:text-primary-dark">
+        <Carousel images={images} />
         <RecentSongs />
       </div>
-      <Carousel images={images} />
+      <div className="flex flex-col items-start ml-16"></div>
     </div>
   );
 }

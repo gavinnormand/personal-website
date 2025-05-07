@@ -24,10 +24,10 @@ export default {
         },
         primary: {
           DEFAULT: "#222222",
-          dark: "#EFEFEF",
+          dark: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#333333",
+          DEFAULT: "#444444",
           dark: "#DDDDDD",
         },
         accent: {
@@ -42,4 +42,12 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /bg-(primary|secondary)/,
+    },
+    {
+      pattern: /dark:bg-(primary|secondary)-dark/, 
+    },
+  ],
 };
