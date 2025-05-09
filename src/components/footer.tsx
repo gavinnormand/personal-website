@@ -2,8 +2,8 @@ import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 
 function Footer() {
   return (
-    <div className="grid grid-cols-3 items-center bg-menus dark:bg-menus-dark w-full px-16 py-4">
-      <p className="text-icon-hover justify-self-start">© 2025 Gavin Normand</p>
+    <div className="grid grid-cols-3 items-center bg-menus dark:bg-menus-dark w-full px-4 lg:px-16 py-4">
+      <p className="text-icon-hover justify-self-start">© 2025 Gavin <span className="hidden md:inline"> Normand</span></p>
       <div className="flex flex-row justify-center items-center">
         <a
           className="mx-3"
@@ -34,7 +34,7 @@ function Footer() {
         </a>
       </div>
       <p className="text-icon-hover justify-self-end">
-        Made with ❤️ by Gavin Normand
+        Made with ❤️ <span className="hidden md:inline">by Gavin <span className="hidden lg:inline">Normand</span></span>
       </p>
     </div>
   );

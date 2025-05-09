@@ -58,9 +58,17 @@ const frameworksAndTools = [
   "Prettier",
   "Figma",
   "Postman",
+  "Next.js",
+  "tRPC",
 ];
 
-const platformsAndDeployment = ["PostgreSQL", "AWS", "Vercel", "Github Pages"];
+const platformsAndDeployment = [
+  "PostgreSQL",
+  "AWS",
+  "Vercel",
+  "Github Pages",
+  "Supabase",
+];
 
 function About() {
   return (
@@ -86,8 +94,9 @@ function About() {
           >
             taking pictures
           </Link>
-          , playing basketball, biking, cooking, skiing, playing tennis, running with my
-          dogs, and overall just spending quality time with friends and family.
+          , playing basketball, biking, cooking, skiing, playing tennis, running
+          with my dogs, and overall just spending quality time with friends and
+          family.
         </p>
         <TagList title="Languages" tags={languages} />
         <TagList title="Frameworks & Tools" tags={frameworksAndTools} />

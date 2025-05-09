@@ -21,13 +21,13 @@ function Home() {
         src={Profile}
         alt="Profile"
       />
-      <h1 className="inline-flex text-4xl font-bold text-primary dark:text-primary-dark">
-        Hi, I'm <div className="text-accent px-2">Gavin Normand!</div>
+      <h1 className="text-3xl sm:text-4xl text-center font-bold text-primary dark:text-primary-dark">
+        Hi, I'm <span className="text-accent px-2">Gavin Normand!</span>
       </h1>
       <p className="mt-4 text-lg text-secondary dark:text-secondary-dark">
         I am a<TypeWriter words={titles} />
       </p>
-      <p className="mt-2 text-lg text-secondary dark:text-secondary-dark">
+      <p className="mt-2 text-lg text-secondary dark:text-secondary-dark text-center">
         Please feel free to explore my projects, experiences, and get in touch!
       </p>
       <Link
