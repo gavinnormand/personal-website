@@ -13,6 +13,7 @@ import Tree from "../assets/aboutMe/Tree.jpg";
 import Washington from "../assets/aboutMe/Washington.jpg";
 import RecentSongs from "../components/recentSongs";
 import TagList from "../components/tagList";
+import { Link } from "react-router-dom";
 
 const images = [
   { src: Capitol, alt: "Me in front of the Capitol Building!" },
@@ -36,6 +37,7 @@ const languages = [
   "C",
   "C#",
   "C++",
+  "SQL",
   "HTML",
   "CSS",
   "Tailwind CSS",
@@ -50,10 +52,15 @@ const frameworksAndTools = [
   "Firebase",
   "JUnit",
   "Docker",
-  "PostgreSQL",
   "Prisma",
   "Bun",
+  "ESLint",
+  "Prettier",
+  "Figma",
+  "Postman",
 ];
+
+const platformsAndDeployment = ["PostgreSQL", "AWS", "Vercel", "Github Pages"];
 
 function About() {
   return (
@@ -63,15 +70,28 @@ function About() {
           About Me
         </h1>
         <p className="text-l pt-4 text-primary dark:text-primary-dark">
-          I'm a second-year student at Northeastern pursuing a bachelor's degree
-          in Computer Science with a concentration in Software and a minor in
-          Mathematics. I am originally from Millstone, New Jersey before moving
-          to Boston for school. In my free time I love playing basketball,
-          biking, skiing, playing tennis, running with my dogs, and overall just
-          spending quality time with friends and family.
+          Hi! My name is Gavin Normand and I am a rising second-year student at
+          Northeastern University pursuing a bachelor's degree in Computer
+          Science with a concentration in Software and a minor in Mathematics. I
+          expect to graduate in December of 2027.
+        </p>
+        <p className="text-l pt-4 text-primary dark:text-primary-dark">
+          I am originally from Millstone, New Jersey, but I am now located in
+          Boston, MA. My current research interests are in Robotics, Artificial
+          Intelligence, Machine Learning, Natural Language Processing, and Cloud
+          Computing. In my free time I love{" "}
+          <Link
+            className="text-accent decoration-wavy hover:underline hover:text-accent-dark"
+            to={"/photos"}
+          >
+            taking pictures
+          </Link>
+          , playing basketball, biking, cooking, skiing, playing tennis, running with my
+          dogs, and overall just spending quality time with friends and family.
         </p>
         <TagList title="Languages" tags={languages} />
-        <TagList title="Frameworks and Tools" tags={frameworksAndTools} />
+        <TagList title="Frameworks & Tools" tags={frameworksAndTools} />
+        <TagList title="Platforms & Deployment" tags={platformsAndDeployment} />
       </div>
       <div className="flex flex-col items-center ml-16 text-primary dark:text-primary-dark">
         <Carousel images={images} />

@@ -36,7 +36,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         >
           <ChevronLeft className="h-8 w-8" />
         </button>
-      <div className="relative w-[300px] overflow-hidden rounded-md">
+      <div className="relative w-[400px] overflow-hidden rounded-md">
         <div
           className="h-full w-full transition-transform duration-500 ease-out"
           style={{

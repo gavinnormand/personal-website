@@ -28,15 +28,15 @@ export default {
         },
         secondary: {
           DEFAULT: "#444444",
-          dark: "#DDDDDD",
+          dark: "#BBBBBB",
         },
         accent: {
-          DEFAULT: "#2D936C",
-          dark: "#34A87C",
+          DEFAULT: "#34A87C",
+          dark: "#2D936C",
         },
         icon: {
           DEFAULT: "#FFFFFF",
-          hover: "#CCCCCC",
+          hover: "#BBBBBB",
         }
       },
     },

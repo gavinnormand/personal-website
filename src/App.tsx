@@ -7,6 +7,7 @@ import Experiences from './pages/experiences'
 import Skills from './pages/skills'
 import Nav from './components/nav'
 import Footer from './components/footer'
+import Photos from './pages/photos'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/photos" element={<Photos />} />
       </Routes>
       <Footer />
     </Router>

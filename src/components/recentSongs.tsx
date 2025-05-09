@@ -40,7 +40,7 @@ export default function RecentSongs() {
                   href={song.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent hover:underline"
+                  className="text-accent decoration-wavy hover:underline"
                 >
                   {song.name}
                 </a>
