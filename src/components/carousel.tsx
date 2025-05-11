@@ -28,7 +28,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   };
 
   return (
-    <div className="flex flex-row mx-auto my-auto">
+    <div className="flex flex-row">
         <button
           onClick={goToPrevious}
           className="text-icon hover:text-icon-hover"
@@ -36,7 +36,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         >
           <ChevronLeft className="h-8 w-8" />
         </button>
-      <div className="relative w-[400px] overflow-hidden rounded-md">
+      <div className="relative w-[300px] lg:w-[400px] overflow-hidden rounded-md">
         <div
           className="h-full w-full transition-transform duration-500 ease-out"
           style={{
@@ -49,7 +49,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
               <img
                 src={image.src}
                 height={1000}
-                width={500}
+                width={800}
                 alt={image.alt}
                 className="h-auto w-full object-contain"
               />

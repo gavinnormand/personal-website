@@ -22,7 +22,7 @@ function Home() {
         alt="Profile"
       />
       <h1 className="text-3xl sm:text-4xl text-center font-bold text-primary dark:text-primary-dark">
-        Hi, I'm <span className="text-accent px-2">Gavin Normand!</span>
+        Hi, I'm <span className="text-accent">Gavin Normand!</span>
       </h1>
       <p className="mt-4 text-lg text-secondary dark:text-secondary-dark">
         I am a<TypeWriter words={titles} />

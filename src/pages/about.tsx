@@ -72,8 +72,8 @@ const platformsAndDeployment = [
 
 function About() {
   return (
-    <div className="grid grid-cols-2 py-8 bg-background dark:bg-background-dark">
-      <div className="flex flex-col items-start ml-16 text-primary dark:text-primary-dark">
+    <div className="grid grid-cols-1 md:grid-cols-2 py-8 bg-background dark:bg-background-dark">
+      <div className="flex flex-col items-start mx-8 md:ml-16 md:mr-0 text-primary dark:text-primary-dark">
         <h1 className="text-4xl font-semibold text-accent dark:text-accent">
           About Me
         </h1>
@@ -84,12 +84,17 @@ function About() {
           expect to graduate in December of 2027.
         </p>
         <p className="text-l pt-4 text-primary dark:text-primary-dark">
-          I am originally from Millstone, New Jersey, but I am now located in
-          Boston, MA. My current research interests are in Robotics, Artificial
-          Intelligence, Machine Learning, Natural Language Processing, and Cloud
-          Computing. In my free time I love{" "}
+          I spend a lot of my time working on projects through Sandbox,
+          freelancing, or personal projects, as well as researching topics that
+          I am interested in. My current research interests are in Robotics,
+          Artificial Intelligence, Machine Learning, Computer Vision, and Cloud
+          Computing.{" "}
+        </p>{" "}
+        <p className="text-l pt-4 text-primary dark:text-primary-dark">
+          I am originally from Millstone, New Jersey, but for a majority of the year I am now located in
+          Boston, MA. In my free time I love{" "}
           <Link
-            className="text-accent decoration-wavy hover:underline hover:text-accent-dark"
+            className="text-accent underline hover:decoration-wavy"
             to={"/photos"}
           >
             taking pictures
@@ -102,7 +107,7 @@ function About() {
         <TagList title="Frameworks & Tools" tags={frameworksAndTools} />
         <TagList title="Platforms & Deployment" tags={platformsAndDeployment} />
       </div>
-      <div className="flex flex-col items-center ml-16 text-primary dark:text-primary-dark">
+      <div className="flex flex-col items-center text-primary dark:text-primary-dark">
         <Carousel images={images} />
         <RecentSongs />
       </div>

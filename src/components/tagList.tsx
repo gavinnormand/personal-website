@@ -7,7 +7,7 @@ interface TagListProps {
 
 const TagList: React.FC<TagListProps> = ({ title, tags }) => {
   return (
-    <div className="flex flex-col items-start py-4">
+    <div className="flex flex-col items-start pt-4">
         <Tag text={title} title={true}/>
         <div className="flex flex-row flex-wrap">
             {tags.map((text) => (
