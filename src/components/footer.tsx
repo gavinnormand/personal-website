@@ -34,7 +34,7 @@ function Footer() {
         </a>
       </div>
       <p className="text-icon-hover justify-self-end">
-        Made with ❤️ <span className="hidden md:inline">by Gavin <span className="hidden lg:inline">Normand</span></span>
+        Made with ❤️ <span className="hidden md:inline">by Gavin Normand</span>
       </p>
     </div>
   );

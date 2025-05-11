@@ -27,7 +27,7 @@ function Home() {
       <p className="mt-4 text-lg text-secondary dark:text-secondary-dark">
         I am a<TypeWriter words={titles} />
       </p>
-      <p className="mt-2 text-lg text-secondary dark:text-secondary-dark text-center">
+      <p className="mt-2 px-2 text-lg text-secondary dark:text-secondary-dark text-center">
         Please feel free to explore my projects, experiences, and get in touch!
       </p>
       <Link
