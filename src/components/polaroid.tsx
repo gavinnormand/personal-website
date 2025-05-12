@@ -9,7 +9,7 @@ interface PolaroidProps {
 
 const Polaroid: React.FC<PolaroidProps> = ({ image }) => {
   return (
-    <div className="w-[330px] h-[400px] flex flex-col items-center justify-between border-[15px] border-white bg-white">
+    <div className="w-[330px] h-[400px] flex flex-col items-center justify-between border-[15px] border-white bg-white shadow-xl">
       <img
         src={image.src}
         alt={image.location}

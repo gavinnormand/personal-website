@@ -28,7 +28,9 @@ import TDGarden from "../assets/cameraRoll/TDGarden.jpg";
 
 function Photos() {
   return (
-    <div className="grid gap-12 grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] justify-items-center bg-background dark:bg-background-dark w-full p-12">
+    <div className="bg-background dark:bg-background-dark px-4 sm:px-8 py-12">
+      <h1 className="text-4xl font-bold text-accent mb-12 ml-8 sm:ml-4">Pictures I've Taken:</h1>
+    <div className="grid gap-12 grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] justify-items-center w-full ">
       <Polaroid image={{ src: Boston1, location: "Boston, MA" }} />
       <Polaroid image={{ src: Boston2, location: "Boston, MA" }} />
       <Polaroid image={{ src: Brooklyn, location: "Brooklyn, NY" }} />
@@ -54,6 +56,7 @@ function Photos() {
       <Polaroid image={{ src: Seattle1, location: "Seattle, WA" }} />
       <Polaroid image={{ src: Snowport, location: "Boston, MA" }} />
       <Polaroid image={{ src: TDGarden, location: "Boston, MA" }} />
+    </div>
     </div>
   );
 }
