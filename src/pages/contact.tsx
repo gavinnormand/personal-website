@@ -1,15 +1,51 @@
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.target as HTMLFormElement);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        result?.error || "An error occurred while sending the message."
+      );
+    }
+
+    alert(result.message || "Message sent successfully!");
+  } catch (error: unknown) {
+    console.error("Error submitting form:", error);
+    if (error instanceof Error) {
+      alert(
+        error.message || "Failed to send the message. Please try again later."
+      );
+    } else {
+      alert("An unknown error occurred. Please try again later.");
+    }
+  }
+};
+
 function Contact() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 py-8 min-h-[calc(100vh-128px)] bg-background dark:bg-background-dark">
       <div className="flex flex-col items-start mb-8 mx-8 md:ml-16 md:mr-0 text-primary dark:text-primary-dark">
-        <h1 className="text-4xl font-semibold text-accent">
-          Contact Info
-        </h1>
+        <h1 className="text-4xl font-semibold text-accent">Contact Info</h1>
         <p className="pt-2 text-primary dark:text-primary-dark">
-          Feel free to use the info below to reach out with any questions, freelance inquiries, or
-          just to chat!
+          Feel free to use the info below to reach out with any questions,
+          freelance inquiries, or just to chat!
         </p>
         <a
           className="mt-4 text-primary dark:text-primary-dark"
@@ -46,8 +82,11 @@ function Contact() {
         </a>
       </div>
       <div className="text-primary dark:text-primary-dark">
-        <form className="flex flex-col w-3/4 justify-self-center">
-        <h1 className="text-2xl font-semibold text-accent">Message Me</h1>
+        <form
+          className="flex flex-col w-3/4 justify-self-center"
+          onSubmit={handleSubmit}
+        >
+          <h1 className="text-2xl font-semibold text-accent">Message Me</h1>
           <label className="my-2">Name *</label>
           <input
             className="rounded-md p-3 mb-3 text-primary"
@@ -65,7 +104,6 @@ function Contact() {
             className="rounded-md p-3 mb-5 text-primary"
             placeholder="Message *"
             required={true}
-            
           ></input>
           <button className="bg-accent p-3 rounded-md my-2 text-white">
             Send Message
