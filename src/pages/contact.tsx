@@ -92,19 +92,24 @@ function Contact() {
             className="rounded-md p-3 mb-3 text-primary"
             placeholder="Name *"
             required={true}
+            name="name"
+            type="text"
           ></input>
           <label className="my-2">Email Address *</label>
           <input
             className="rounded-md p-3 mb-3 text-primary"
             placeholder="Email Address *"
             required={true}
+            name="email"
+            type="email"
           ></input>
           <label className="my-2">Message *</label>
-          <input
+          <textarea
             className="rounded-md p-3 mb-5 text-primary"
             placeholder="Message *"
             required={true}
-          ></input>
+            name="message"
+          ></textarea>
           <button className="bg-accent p-3 rounded-md my-2 text-white">
             Send Message
           </button>
