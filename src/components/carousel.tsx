@@ -34,7 +34,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           className="text-icon hover:text-icon-hover"
           aria-label="Previous slide"
         >
-          <ChevronLeft className="h-8 w-8" />
+          <ChevronLeft className="h-8 w-8 text-menus dark:text-icon" />
         </button>
       <div className="relative w-[300px] lg:w-[400px] overflow-hidden rounded-md">
         <div
@@ -62,7 +62,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           className="text-icon hover:text-icon-hover ml-auto"
           aria-label="Next slide"
         >
-          <ChevronRight className="h-8 w-8" />
+          <ChevronRight className="h-8 w-8 text-menus dark:text-icon" />
         </button>
     </div>
   );

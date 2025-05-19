@@ -40,7 +40,6 @@ const languages = [
   "SQL",
   "HTML",
   "CSS",
-  "Tailwind CSS",
   "Racket",
 ];
 
@@ -48,6 +47,7 @@ const frameworksAndTools = [
   "React",
   "Node.js",
   "Git",
+  "Tailwind CSS",
   "Flask",
   "Firebase",
   "JUnit",

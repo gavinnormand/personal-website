@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Code, MenuIcon, X } from "lucide-react";
+import { CodeXml, MenuIcon, X } from "lucide-react";
 import ThemeToggle from "./themeToggle";
 import { useState } from "react";
 import Menu from "./menu";
@@ -15,7 +15,7 @@ function Nav() {
           className="inline-flex justify-self-start text-icon hover:text-icon-hover"
           to={"/"}
         >
-          <Code className="mr-3" /> <span className="hidden lg:block">Gavin Normand</span>
+          <CodeXml className="mr-3" /> <span className="hidden lg:block">Gavin Normand</span>
         </Link>
         <div className="inline-flex justify-center">
           <div className="pb-1.5 border-b-2 border-accent">
