@@ -45,7 +45,8 @@ function Nav() {
             </Link>
             <a
           className="text-icon hover:text-icon-hover mx-3"
-          href="https://drive.google.com/file/d/17GSW2EOedPHEzP3nzrnQzRRjRvhObpzb/view?usp=sharing"
+          href="https://www.gavinnormand.com/resume.pdf"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Resume
