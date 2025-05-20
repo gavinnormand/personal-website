@@ -50,6 +50,7 @@ function Contact() {
         <a
           className="mt-4 text-primary dark:text-primary-dark"
           href="mailto:normandgavin@gmail.com"
+          target="_blank"
         >
           <div className="inline-flex items-center">
             <SiGmail className="w-6 h-6 mr-2.5" />{" "}
@@ -61,6 +62,7 @@ function Contact() {
         <a
           className="mt-4 text-primary dark:text-primary-dark"
           href="https://www.linkedin.com/in/gavin-normand/"
+          target="_blank"
         >
           <div className="inline-flex items-center">
             <SiLinkedin className="w-6 h-6 mr-2.5" />{" "}
@@ -72,6 +74,7 @@ function Contact() {
         <a
           className="mt-4 text-primary dark:text-primary-dark"
           href="https://github.com/gavinnormand"
+          target="_blank"
         >
           <div className="inline-flex">
             <SiGithub className="w-6 h-6 mr-2.5" />{" "}
