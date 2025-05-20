@@ -8,6 +8,7 @@ import Skills from './pages/skills'
 import Nav from './components/nav'
 import Footer from './components/footer'
 import Photos from './pages/photos'
+import Resume from './pages/resume'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/photos" element={<Photos />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
       <Footer />
     </Router>
