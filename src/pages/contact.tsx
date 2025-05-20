@@ -1,4 +1,8 @@
+import { useRef } from "react";
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
+
+function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
@@ -26,6 +30,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     }
 
     alert(result.message || "Message sent successfully!");
+    formRef.current?.reset();
   } catch (error: unknown) {
     console.error("Error submitting form:", error);
     if (error instanceof Error) {
@@ -38,7 +43,6 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   }
 };
 
-function Contact() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 py-8 min-h-[calc(100vh-128px)] bg-background dark:bg-background-dark">
       <div className="flex flex-col items-start mb-8 mx-8 md:ml-16 md:mr-0 text-primary dark:text-primary-dark">
