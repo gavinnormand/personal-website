@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Profile from "../assets/profile.png";
 import TypeWriter from "../components/typewriter";
+import { ArrowRight } from "lucide-react";
 
 const titles = [
   " programmer",
@@ -31,11 +32,11 @@ function Home() {
         Please feel free to explore my projects, experiences, and get in touch!
       </p>
       <Link
-              className="m-4 border-4 p-4 rounded-2xl border-menus dark:border-menus-dark bg-accent text-xl"
-              to={"/about"}
-            >
-              Learn More About Me!
-            </Link>
+        className="inline-flex items-center m-4 border-4 p-4 rounded-2xl border-accent-dark dark:border-accent-dark bg-accent hover:bg-accent-dark text-xl"
+        to={"/about"}
+      >
+        More About Me <ArrowRight className="ml-2" />
+      </Link>
     </div>
   );
 }
