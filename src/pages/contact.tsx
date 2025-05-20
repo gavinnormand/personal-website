@@ -90,6 +90,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       </div>
       <div className="text-primary dark:text-primary-dark">
         <form
+        ref={formRef}
           className="flex flex-col w-3/4 justify-self-center"
           onSubmit={handleSubmit}
         >
