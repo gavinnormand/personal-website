@@ -30,8 +30,8 @@ const images = [
 ];
 
 const languages = [
-  "Python",
   "Java",
+  "Python",
   "JavaScript",
   "TypeScript",
   "C",
@@ -43,31 +43,48 @@ const languages = [
   "Racket",
 ];
 
-const frameworksAndTools = [
+const frameworksAndLibraries = [
+  // Frontend
   "React",
-  "Node.js",
-  "Git",
+  "Next.js",
   "Tailwind CSS",
-  "Flask",
-  "Firebase",
-  "JUnit",
-  "Docker",
-  "Prisma",
+
+  // Backend / Full-stack
+  "Node.js",
   "Bun",
+  "Flask",
+  "tRPC",
+  "Prisma",
+
+  // Testing
+  "JUnit",
+
+  // Data Science
+  "NumPy",
+  "Pandas",
+];
+
+const toolsAndPlatforms = [
+  // Dev Tools
+  "Git",
+  "Docker",
   "ESLint",
   "Prettier",
   "Figma",
-  "Postman",
-  "Next.js",
-  "tRPC",
-];
 
-const platformsAndDeployment = [
-  "PostgreSQL",
-  "AWS",
+  // Deployment & Hosting
   "Vercel",
-  "Github Pages",
+  "GitHub Pages",
+  "AWS",
+
+  // Databases / Backend-as-a-Service
+  "PostgreSQL",
   "Supabase",
+
+  // IDEs
+  "VS Code",
+  "IntelliJ",
+  "Eclipse",
 ];
 
 function About() {
@@ -91,8 +108,8 @@ function About() {
           Computing.{" "}
         </p>{" "}
         <p className="text-l pt-4 text-primary dark:text-primary-dark">
-          I am originally from Millstone, New Jersey, but for a majority of the year I am now located in
-          Boston, MA. In my free time I love{" "}
+          I am originally from Millstone, New Jersey, but for a majority of the
+          year I am now located in Boston, MA. In my free time I love{" "}
           <Link
             className="text-accent underline hover:decoration-wavy"
             to={"/photos"}
@@ -104,8 +121,8 @@ function About() {
           family.
         </p>
         <TagList title="Languages" tags={languages} />
-        <TagList title="Frameworks & Tools" tags={frameworksAndTools} />
-        <TagList title="Platforms & Deployment" tags={platformsAndDeployment} />
+        <TagList title="Frameworks & Libraries" tags={frameworksAndLibraries} />
+        <TagList title="Tools & Platforms" tags={toolsAndPlatforms} />
       </div>
       <div className="flex flex-col items-center text-primary dark:text-primary-dark">
         <Carousel images={images} />
