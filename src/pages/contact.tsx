@@ -97,7 +97,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           <h1 className="text-2xl font-semibold text-accent">Message Me</h1>
           <label className="my-2">Name *</label>
           <input
-            className="rounded-md p-3 mb-3 text-primary"
+            className="rounded-md p-3 mb-3 text-primary border-2 border-primary"
             placeholder="Name *"
             required={true}
             name="name"
@@ -105,7 +105,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           ></input>
           <label className="my-2">Email Address *</label>
           <input
-            className="rounded-md p-3 mb-3 text-primary"
+            className="rounded-md p-3 mb-3 text-primary border-2 border-primary"
             placeholder="Email Address *"
             required={true}
             name="email"
@@ -113,7 +113,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           ></input>
           <label className="my-2">Message *</label>
           <textarea
-            className="rounded-md p-3 mb-5 text-primary"
+            className="rounded-md p-3 mb-5 text-primary border-2 border-primary"
             placeholder="Message *"
             required={true}
             name="message"

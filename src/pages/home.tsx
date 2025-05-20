@@ -32,7 +32,7 @@ function Home() {
         Please feel free to explore my projects, experiences, and get in touch!
       </p>
       <Link
-        className="inline-flex items-center m-4 border-4 p-4 rounded-2xl border-accent-dark dark:border-accent-dark bg-accent hover:bg-accent-dark text-xl"
+        className="inline-flex items-center m-4 border-4 p-4 rounded-xl border-accent-dark dark:border-accent-dark bg-accent hover:bg-accent-dark text-xl"
         to={"/about"}
       >
         More About Me <ArrowRight className="ml-2" />

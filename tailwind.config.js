@@ -15,7 +15,7 @@ export default {
       },
       colors: {
         background: {
-          DEFAULT: "#EFEFEF",
+          DEFAULT: "#FFFFFF",
           dark: "#222222",
         },
         menus: {
