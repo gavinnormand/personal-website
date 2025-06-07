@@ -75,6 +75,30 @@ const projects = [
       alt: "PlaNUr's Landing Page",
     },
   },
+  {
+    name: "Maze Game",
+    description:
+      "test",
+    githubUrl: "",
+    liveUrl: "https://www.youtube.com/watch?v=i757tDnsfn8",
+    stack: ["Java"],
+    image: {
+      src: "/projects/mazeGame.mp4",
+      alt: "My Maze Game",
+    },
+  },
+  {
+    name: "Seam Carver",
+    description:
+      "test",
+    githubUrl: "",
+    liveUrl: "https://www.youtube.com/watch?v=iTsX2446KKE",
+    stack: ["Java"],
+    image: {
+      src: "/projects/seamCarver.mp4",
+      alt: "My Seam Carver",
+    },
+  },
 ];
 
 function Projects() {

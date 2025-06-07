@@ -23,13 +23,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
 }) => {
   const hasLiveUrl = liveUrl && liveUrl.length > 0;
+  const isImage = !image.src.endsWith(".mp4");
   return (
     <div className="w-[382px] rounded-xl border shadow flex flex-col border-primary bg-menus dark:bg-menus-dark p-4">
-      <img
-        className="rounded-xl mb-4 w-[350px] h-[200px] object-cover"
-        src={image.src}
-        alt={image.alt}
-      ></img>
+      <div className="w-[350px] h-[200px] mb-4">
+        <img
+          className={`${isImage ? "block" : "hidden"} rounded-xl w-full h-full object-cover block`}
+          src={image.src}
+          alt={image.alt}
+        />
+        <video
+          className={`${isImage ? "hidden" : "block"} rounded-xl w-full h-full object-cover block`}
+          src={image.src}
+          loop
+          muted
+          autoPlay
+          playsInline
+          controls={false}
+        />
+      </div>
       <h1 className="text-primary-dark text-2xl">{name}</h1>
       <p className="text-[#D1D5DB]">{description}</p>
       <div className="my-4">
