@@ -13,38 +13,38 @@ function Nav() {
       <div className="hidden md:grid grid-cols-3 items-center bg-menus dark:bg-menus-dark py-4 px-14">
         <Link className="group inline-flex justify-self-star" to={"/"}>
           <CodeXml className="mr-3 text-accent group-hover:text-accent-dark" />{" "}
-          <span className="hidden lg:block text-icon group-hover:text-icon-hover">
+          <span className="hidden lg:block text-icon transition-colors group-hover:text-icon-hover">
             Gavin Normand
           </span>
         </Link>
         <div className="inline-flex justify-center">
           <div className="pb-1.5 border-b-2 border-accent">
             <Link
-              className="text-icon hover:text-icon-hover mx-3"
+              className="text-icon transition-colors hover:text-icon-hover mx-3"
               to={"/about"}
             >
               About
             </Link>
             <Link
-              className="text-icon hover:text-icon-hover mx-3"
+              className="text-icon transition-colors hover:text-icon-hover mx-3"
               to={"/projects"}
             >
               Projects
             </Link>
             <Link
-              className="text-icon hover:text-icon-hover mx-3"
+              className="text-icon transition-colors hover:text-icon-hover mx-3"
               to={"/experiences"}
             >
               Experiences
             </Link>
             <Link
-              className="text-icon hover:text-icon-hover mx-3"
+              className="text-icon transition-colors hover:text-icon-hover mx-3"
               to={"/contact"}
             >
               Contact
             </Link>
             <Link
-              className="text-icon hover:text-icon-hover mx-3"
+              className="text-icon transition-colors hover:text-icon-hover mx-3"
               to={"/resume"}
             >
               Resume

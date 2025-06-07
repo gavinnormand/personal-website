@@ -29,34 +29,36 @@ import TDGarden from "../assets/cameraRoll/TDGarden.jpg";
 function Photos() {
   return (
     <div className="bg-background dark:bg-background-dark px-4 sm:px-8 py-12">
-      <h1 className="text-4xl font-bold text-accent mb-12 ml-8 sm:ml-4">Pictures I've Taken:</h1>
-    <div className="grid gap-12 grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] justify-items-center w-full ">
-      <Polaroid image={{ src: Boston1, location: "Boston, MA" }} />
-      <Polaroid image={{ src: Boston2, location: "Boston, MA" }} />
-      <Polaroid image={{ src: Brooklyn, location: "Brooklyn, NY" }} />
-      <Polaroid image={{ src: Cambridge1, location: "Cambridge, MA" }} />
-      <Polaroid image={{ src: Cambridge2, location: "Cambridge, MA" }} />
-      <Polaroid image={{ src: ChristianScience1, location: "Boston, MA" }} />
-      <Polaroid image={{ src: ChristianScience2, location: "Boston, MA" }} />
-      <Polaroid image={{ src: ChristianScience3, location: "Boston, MA" }} />
-      <Polaroid image={{ src: Citgo, location: "Boston, MA" }} />
-      <Polaroid image={{ src: Esplanade, location: "Boston, MA" }} />
-      <Polaroid image={{ src: Fenway, location: "Boston, MA" }} />
-      <Polaroid image={{ src: GWBridge, location: "New York, NY" }} />
-      <Polaroid image={{ src: Hoboken1, location: "Hoboken, NJ" }} />
-      <Polaroid image={{ src: Hoboken2, location: "Hoboken, NJ" }} />
-      <Polaroid image={{ src: JonesBeach, location: "Jones Beach, NY" }} />
-      <Polaroid image={{ src: Killington, location: "Killington, VT" }} />
-      <Polaroid image={{ src: LakeGeorge, location: "Lake George, NY" }} />
-      <Polaroid image={{ src: LongBranch, location: "Long Branch, NJ" }} />
-      <Polaroid image={{ src: Melrose1, location: "Melrose, MA" }} />
-      <Polaroid image={{ src: Melrose2, location: "Melrose, MA" }} />
-      <Polaroid image={{ src: MFA1, location: "Boston, MA" }} />
-      <Polaroid image={{ src: MFA2, location: "Boston, MA" }} />
-      <Polaroid image={{ src: Seattle1, location: "Seattle, WA" }} />
-      <Polaroid image={{ src: Snowport, location: "Boston, MA" }} />
-      <Polaroid image={{ src: TDGarden, location: "Boston, MA" }} />
-    </div>
+      <h1 className="text-4xl font-bold text-accent mb-12 ml-8 sm:ml-4">
+        Pictures I've Taken:
+      </h1>
+      <div className="grid gap-12 grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] justify-items-center w-full ">
+        <Polaroid image={{ src: Boston1, location: "Boston, MA" }} />
+        <Polaroid image={{ src: Boston2, location: "Boston, MA" }} />
+        <Polaroid image={{ src: Brooklyn, location: "Brooklyn, NY" }} />
+        <Polaroid image={{ src: Cambridge1, location: "Cambridge, MA" }} />
+        <Polaroid image={{ src: Cambridge2, location: "Cambridge, MA" }} />
+        <Polaroid image={{ src: ChristianScience1, location: "Boston, MA" }} />
+        <Polaroid image={{ src: ChristianScience2, location: "Boston, MA" }} />
+        <Polaroid image={{ src: ChristianScience3, location: "Boston, MA" }} />
+        <Polaroid image={{ src: Citgo, location: "Boston, MA" }} />
+        <Polaroid image={{ src: Esplanade, location: "Boston, MA" }} />
+        <Polaroid image={{ src: Fenway, location: "Boston, MA" }} />
+        <Polaroid image={{ src: GWBridge, location: "New York, NY" }} />
+        <Polaroid image={{ src: Hoboken1, location: "Hoboken, NJ" }} />
+        <Polaroid image={{ src: Hoboken2, location: "Hoboken, NJ" }} />
+        <Polaroid image={{ src: JonesBeach, location: "Jones Beach, NY" }} />
+        <Polaroid image={{ src: Killington, location: "Killington, VT" }} />
+        <Polaroid image={{ src: LakeGeorge, location: "Lake George, NY" }} />
+        <Polaroid image={{ src: LongBranch, location: "Long Branch, NJ" }} />
+        <Polaroid image={{ src: Melrose1, location: "Melrose, MA" }} />
+        <Polaroid image={{ src: Melrose2, location: "Melrose, MA" }} />
+        <Polaroid image={{ src: MFA1, location: "Boston, MA" }} />
+        <Polaroid image={{ src: MFA2, location: "Boston, MA" }} />
+        <Polaroid image={{ src: Seattle1, location: "Seattle, WA" }} />
+        <Polaroid image={{ src: Snowport, location: "Boston, MA" }} />
+        <Polaroid image={{ src: TDGarden, location: "Boston, MA" }} />
+      </div>
     </div>
   );
 }

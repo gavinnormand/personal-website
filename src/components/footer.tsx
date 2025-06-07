@@ -12,7 +12,7 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="E-Mail"
         >
-          <SiGmail className="text-icon hover:text-icon-hover h-8 w-8" />
+          <SiGmail className="text-icon transition-colors hover:text-icon-hover h-8 w-8" />
         </a>
         <a
           className="mx-3"
@@ -21,7 +21,7 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <SiLinkedin className="text-icon hover:text-icon-hover h-8 w-8" />
+          <SiLinkedin className="text-icon transition-colors hover:text-icon-hover h-8 w-8" />
         </a>
         <a
           className="mx-3"
@@ -30,7 +30,7 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <SiGithub className="text-icon hover:text-icon-hover h-8 w-8" />
+          <SiGithub className="text-icon transition-colors hover:text-icon-hover h-8 w-8" />
         </a>
       </div>
       <p className="text-icon-hover justify-self-end">

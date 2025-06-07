@@ -27,7 +27,7 @@ export default function ThemeToggle() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
   return (
-    <button onClick={toggleTheme} className="text-icon hover:text-icon-hover">
+    <button onClick={toggleTheme} className="text-icon transition-colors hover:text-icon-hover">
       {theme === "dark" ? (
         <Sun className="w-8 h-8" />
       ) : (
