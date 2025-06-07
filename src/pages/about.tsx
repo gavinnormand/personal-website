@@ -1,32 +1,21 @@
 import Carousel from "../components/carousel";
 
-import Capitol from "../assets/aboutMe/Capitol.jpg";
-import ClassicDC from "../assets/aboutMe/ClassicDC.jpg";
-import DOOM from "../assets/aboutMe/DOOM.jpg";
-import Einstein from "../assets/aboutMe/Einstein.jpg";
-import Escalator from "../assets/aboutMe/Escalator.jpg";
-import Hike from "../assets/aboutMe/Hike.jpg";
-import Lincoln from "../assets/aboutMe/Lincoln.jpg";
-import Panda from "../assets/aboutMe/Panda.jpg";
-import Suit from "../assets/aboutMe/Suit.jpg";
-import Tree from "../assets/aboutMe/Tree.jpg";
-import Washington from "../assets/aboutMe/Washington.jpg";
 import RecentSongs from "../components/recentSongs";
 import TagList from "../components/tagList";
 import { Link } from "react-router-dom";
 
 const images = [
-  { src: Capitol, alt: "Me in front of the Capitol Building!" },
-  { src: ClassicDC, alt: "Me in front of this cool pyramid sculpture in DC" },
-  { src: DOOM, alt: "DR. DOOM ride at Universal" },
-  { src: Einstein, alt: "Me in front of a statue of myself" },
-  { src: Escalator, alt: "Me on an escalator" },
-  { src: Hike, alt: "Me on a hike with friends" },
-  { src: Lincoln, alt: "Me in front of Abraham Lincoln" },
-  { src: Panda, alt: "Me in front of a real live panda" },
-  { src: Suit, alt: "Me in a suit" },
-  { src: Tree, alt: "Me crossing a tree" },
-  { src: Washington, alt: "Me holding the Washington Monument, REAL" },
+  { src: "/aboutMe/Capitol.jpg", alt: "Me in front of the Capitol Building!" },
+  { src: "/aboutMe/ClassicDC.jpg", alt: "Me in front of this cool pyramid sculpture in DC" },
+  { src: "/aboutMe/DOOM.jpg", alt: "DR. DOOM ride at Universal" },
+  { src: "/aboutMe/Einstein.jpg", alt: "Me in front of a statue of myself" },
+  { src: "/aboutMe/Escalator.jpg", alt: "Me on an escalator" },
+  { src: "/aboutMe/Hike.jpg", alt: "Me on a hike with friends" },
+  { src: "/aboutMe/Lincoln.jpg", alt: "Me in front of Abraham Lincoln" },
+  { src: "/aboutMe/Panda.jpg", alt: "Me in front of a real live panda" },
+  { src: "/aboutMe/Suit.jpg", alt: "Me in a suit" },
+  { src: "/aboutMe/Tree.jpg", alt: "Me crossing a tree" },
+  { src: "/aboutMe/Washington.jpg", alt: "Me holding the Washington Monument, REAL" },
 ];
 
 const languages = [

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Profile from "../assets/profile.png";
 import TypeWriter from "../components/typewriter";
 import { ArrowRight } from "lucide-react";
 
@@ -19,7 +18,7 @@ function Home() {
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-128px)] bg-background dark:bg-background-dark">
       <img
         className="my-8 rounded-full border-4 border-menus dark:border-menus-dark shadow-xl"
-        src={Profile}
+        src={"/profile.png"}
         alt="Profile"
       />
       <h1 className="text-3xl sm:text-4xl text-center font-bold text-primary dark:text-primary-dark">
