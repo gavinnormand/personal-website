@@ -1,5 +1,5 @@
 import { SetStateAction, useEffect, useState } from "react";
-import { fetchRecentSongs } from "../utils/fetchRecentSongs";
+import { fetchRecentSongs } from "../../utils/fetchRecentSongs";
 import { SiSpotify } from "react-icons/si";
 
 type Song = {
@@ -23,7 +23,11 @@ export default function RecentSongs() {
 
   return (
     <div className="bg-menus dark:bg-menus-dark p-4 rounded-xl mt-4">
-      <h2 className="inline-flex items-center text-xl font-semibold mb-4 text-primary-dark"> <SiSpotify className="text-3xl text-accent mr-3"/> What I'm Listening To:</h2>
+      <h2 className="inline-flex items-center text-xl font-semibold mb-4 text-primary-dark">
+        {" "}
+        <SiSpotify className="text-3xl text-accent mr-3" /> What I'm Listening
+        To:
+      </h2>
       {loading ? (
         <p className="text-secondary dark:text-secondary-dark">Loading...</p>
       ) : (

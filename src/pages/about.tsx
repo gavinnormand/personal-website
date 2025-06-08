@@ -1,12 +1,15 @@
-import Carousel from "../components/carousel";
+import Carousel from "../components/about/carousel";
 
-import RecentSongs from "../components/recentSongs";
-import TagList from "../components/tagList";
+import RecentSongs from "../components/about/recentSongs";
+import TagList from "../components/about/tagList";
 import { Link } from "react-router-dom";
 
 const images = [
   { src: "/aboutMe/Capitol.jpg", alt: "Me in front of the Capitol Building!" },
-  { src: "/aboutMe/ClassicDC.jpg", alt: "Me in front of this cool pyramid sculpture in DC" },
+  {
+    src: "/aboutMe/ClassicDC.jpg",
+    alt: "Me in front of this cool pyramid sculpture in DC",
+  },
   { src: "/aboutMe/DOOM.jpg", alt: "DR. DOOM ride at Universal" },
   { src: "/aboutMe/Einstein.jpg", alt: "Me in front of a statue of myself" },
   { src: "/aboutMe/Escalator.jpg", alt: "Me on an escalator" },
@@ -15,7 +18,10 @@ const images = [
   { src: "/aboutMe/Panda.jpg", alt: "Me in front of a real live panda" },
   { src: "/aboutMe/Suit.jpg", alt: "Me in a suit" },
   { src: "/aboutMe/Tree.jpg", alt: "Me crossing a tree" },
-  { src: "/aboutMe/Washington.jpg", alt: "Me holding the Washington Monument, REAL" },
+  {
+    src: "/aboutMe/Washington.jpg",
+    alt: "Me holding the Washington Monument, REAL",
+  },
 ];
 
 const languages = [

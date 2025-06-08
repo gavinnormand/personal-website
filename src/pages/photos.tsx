@@ -1,4 +1,4 @@
-import PolaroidGrid from "../components/polaroidGrid";
+import PolaroidGrid from "../components/about/polaroidGrid";
 
 const images = [
   { src: "/cameraRoll/Boston1.jpg", location: "Boston, MA" },

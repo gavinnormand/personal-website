@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TypeWriter from "../components/typewriter";
+import TypeWriter from "../components/home/typewriter";
 import { ArrowRight } from "lucide-react";
 
 const titles = [
@@ -10,7 +10,7 @@ const titles = [
   " research assistant",
   " web developer",
   " robotics engineer",
-  "n it consultant",
+  "n IT consultant",
 ];
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
         Please feel free to explore my projects, experiences, and get in touch!
       </p>
       <Link
-        className="inline-flex items-center m-4 border-4 p-4 rounded-xl transition-colors border-accent-dark dark:border-accent-dark bg-accent hover:bg-accent-dark text-xl"
+        className="inline-flex items-center m-4 border-4 p-4 rounded-xl transition-colors text-primary dark:text-primary-dark border-accent-dark dark:border-accent-dark hover:bg-accent-dark text-xl hover:text-primary-dark"
         to={"/about"}
       >
         More About Me <ArrowRight className="ml-2" />

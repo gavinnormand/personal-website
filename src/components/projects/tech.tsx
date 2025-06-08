@@ -2,7 +2,7 @@ interface TagProps {
   text: string;
 }
 
-const ProjectTag: React.FC<TagProps> = ({ text }) => {
+const Tech: React.FC<TagProps> = ({ text }) => {
   return (
     <p className="rounded-md text-xs py-1 px-2 text-primary-dark bg-secondary ">
       {text}
@@ -10,4 +10,4 @@ const ProjectTag: React.FC<TagProps> = ({ text }) => {
   );
 };
 
-export default ProjectTag;
+export default Tech;

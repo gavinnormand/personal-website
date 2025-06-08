@@ -1,6 +1,6 @@
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
-import ProejctTagList from "./projectTagList";
+import ProjectTagList from "./techStack";
 
 interface ProjectCardProps {
   name: string;
@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <h1 className="text-primary-dark text-2xl">{name}</h1>
       <p className="text-[#D1D5DB]">{description}</p>
       <div className="my-4">
-        <ProejctTagList tags={stack} />
+        <ProjectTagList tags={stack} />
       </div>
       <div className="flex justify-between mt-auto">
         <a

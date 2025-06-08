@@ -1,4 +1,4 @@
-import ProjectGrid from "../components/projectGrid";
+import ProjectGrid from "../components/projects/projectGrid";
 
 const projects = [
   {
