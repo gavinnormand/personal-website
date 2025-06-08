@@ -46,13 +46,15 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
         >
           Contact
         </Link>
-        <Link
+        <a
           className="text-icon hover:text-icon-hover py-2"
-          to={"/resume"}
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           onClick={onClose}
         >
           Resume
-        </Link>
+        </a>
       </div>
     </div>
   );
