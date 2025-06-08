@@ -43,12 +43,14 @@ function Nav() {
             >
               Contact
             </Link>
-            <Link
+            <a
               className="text-icon transition-colors hover:text-icon-hover mx-3"
-              to={"/resume"}
+              href={"/resume.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Resume
-            </Link>
+            </a>
           </div>
         </div>
         <div className="inline-flex justify-self-end">
