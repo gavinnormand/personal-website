@@ -37,7 +37,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       <div className="w-[100px] h-[100px] m-4 ">
         <a href={logo.link} target="_blank" rel="noopener noreferrer">
           <img
-            className="blur-0 hover:blur-[1px] transition duration-300 rounded-xl w-full h-full object-cover"
+            className="blur-0 hover:shadow-[0_0_15px_#FFFFFF] transition duration-200 rounded-xl w-full h-full object-cover"
             src={logo.src}
             alt={logo.alt}
           />
