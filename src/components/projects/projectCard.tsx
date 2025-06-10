@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const hasLiveUrl = liveUrl && liveUrl.length > 0;
   const isImage = !image.src.endsWith(".mp4");
   return (
-    <div className="w-[382px] rounded-xl border shadow flex flex-col border-primary bg-menus dark:bg-menus-dark p-4">
+    <div className="w-[382px] rounded-xl shadow flex flex-col border-primary bg-menus dark:bg-menus-dark p-4">
       <div className="w-[350px] h-[200px] mb-4">
         <img
           className={`${isImage ? "block" : "hidden"} rounded-xl w-full h-full object-cover block`}

@@ -16,7 +16,7 @@ interface ProjectGridProps {
   projects: ProjectCardProps[];
 }
 
-const TagList: React.FC<ProjectGridProps> = ({ projects }) => {
+const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
   return (
     <div className="justify-self-center py-8 grid grid-cols-1 mdlg:grid-cols-2 xl:grid-cols-3 gap-6 bg-background dark:bg-background-dark">
             {projects.map((projectInfo) => (
@@ -26,4 +26,4 @@ const TagList: React.FC<ProjectGridProps> = ({ projects }) => {
   );
 };
 
-export default TagList;
+export default ProjectGrid;
