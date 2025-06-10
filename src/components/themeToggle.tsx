@@ -27,11 +27,14 @@ export default function ThemeToggle() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
   return (
-    <button onClick={toggleTheme} className="text-icon transition-colors hover:text-icon-hover">
+    <button
+      onClick={toggleTheme}
+      className="text-icon transition-colors hover:text-icon-hover"
+    >
       {theme === "dark" ? (
-        <Sun className="w-8 h-8" />
+        <Sun className="h-8 w-8" />
       ) : (
-        <Moon className="w-8 h-8" />
+        <Moon className="h-8 w-8" />
       )}
     </button>
   );

@@ -13,7 +13,9 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(Math.floor(Math.random() * images.length));
+  const [currentIndex, setCurrentIndex] = useState(
+    Math.floor(Math.random() * images.length),
+  );
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -29,14 +31,14 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   return (
     <div className="flex flex-row">
-        <button
-          onClick={goToPrevious}
-          className="text-icon hover:text-icon-hover"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="h-8 w-8 text-menus dark:text-icon" />
-        </button>
-      <div className="relative w-[300px] lg:w-[400px] overflow-hidden rounded-md">
+      <button
+        onClick={goToPrevious}
+        className="text-icon hover:text-icon-hover"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft className="h-8 w-8 text-menus dark:text-icon" />
+      </button>
+      <div className="relative w-[300px] overflow-hidden rounded-md lg:w-[400px]">
         <div
           className="h-full w-full transition-transform duration-500 ease-out"
           style={{
@@ -57,13 +59,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           ))}
         </div>
       </div>
-        <button
-          onClick={goToNext}
-          className="text-icon hover:text-icon-hover ml-auto"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="h-8 w-8 text-menus dark:text-icon" />
-        </button>
+      <button
+        onClick={goToNext}
+        className="ml-auto text-icon hover:text-icon-hover"
+        aria-label="Next slide"
+      >
+        <ChevronRight className="h-8 w-8 text-menus dark:text-icon" />
+      </button>
     </div>
   );
 };

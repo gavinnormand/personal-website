@@ -25,15 +25,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const hasLiveUrl = liveUrl && liveUrl.length > 0;
   const isImage = !image.src.endsWith(".mp4");
   return (
-    <div className="w-[382px] rounded-xl shadow flex flex-col border-primary bg-menus dark:bg-menus-dark p-4">
-      <div className="w-[350px] h-[200px] mb-4">
+    <div className="flex w-[382px] flex-col rounded-xl border-primary bg-menus p-4 shadow dark:bg-menus-dark">
+      <div className="mb-4 h-[200px] w-[350px]">
         <img
-          className={`${isImage ? "block" : "hidden"} rounded-xl w-full h-full object-cover block`}
+          className={`${isImage ? "block" : "hidden"} block h-full w-full rounded-xl object-cover`}
           src={image.src}
           alt={image.alt}
         />
         <video
-          className={`${isImage ? "hidden" : "block"} rounded-xl w-full h-full object-cover block`}
+          className={`${isImage ? "hidden" : "block"} block h-full w-full rounded-xl object-cover`}
           src={image.src}
           loop
           muted
@@ -42,28 +42,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           controls={false}
         />
       </div>
-      <h1 className="text-primary-dark text-2xl">{name}</h1>
+      <h1 className="text-2xl text-primary-dark">{name}</h1>
       <p className="text-[#D1D5DB]">{description}</p>
       <div className="my-4">
         <ProjectTagList tags={stack} />
       </div>
-      <div className="flex justify-between mt-auto">
+      <div className="mt-auto flex justify-between">
         <a
-          className="inline-flex items-center border-2 py-2 px-4 rounded-xl transition-colors border-[#6e40c9] hover:bg-[#8a63d2]"
+          className="inline-flex items-center rounded-xl border-2 border-[#6e40c9] px-4 py-2 transition-colors hover:bg-[#8a63d2]"
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiGithub className="w-5 h-5 mr-2.5" />
+          <SiGithub className="mr-2.5 h-5 w-5" />
           GitHub
         </a>
         <a
-          className={`${hasLiveUrl ? "block" : "hidden"} inline-flex items-center border-2 py-2 px-4 rounded-xl transition-colors border-accent-dark hover:bg-[#4dbb91]`}
+          className={`${hasLiveUrl ? "block" : "hidden"} inline-flex items-center rounded-xl border-2 border-accent-dark px-4 py-2 transition-colors hover:bg-[#4dbb91]`}
           href={liveUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FiExternalLink className="w-5 h-5 mr-2.5" />
+          <FiExternalLink className="mr-2.5 h-5 w-5" />
           Visit
         </a>
       </div>

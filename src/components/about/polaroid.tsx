@@ -9,14 +9,14 @@ interface PolaroidProps {
 
 const Polaroid: React.FC<PolaroidProps> = ({ image }) => {
   return (
-    <div className="w-[330px] h-[400px] flex flex-col items-center justify-between border-[15px] border-white bg-white shadow-xl">
+    <div className="flex h-[400px] w-[330px] flex-col items-center justify-between border-[15px] border-white bg-white shadow-xl">
       <img
         src={image.src}
         alt={image.location}
-        className="w-[300px] h-[300px] object-cover"
+        className="h-[300px] w-[300px] object-cover"
         loading="lazy"
       />
-      <div className="text-center text-black pb-[20px]">{image.location}</div>
+      <div className="pb-[20px] text-center text-black">{image.location}</div>
     </div>
   );
 };

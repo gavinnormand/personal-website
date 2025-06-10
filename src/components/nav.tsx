@@ -10,41 +10,41 @@ function Nav() {
   return (
     <nav>
       {/* Desktop Layout */}
-      <div className="hidden md:grid grid-cols-3 items-center bg-menus dark:bg-menus-dark py-4 px-14">
-        <Link className="group inline-flex justify-self-star" to={"/"}>
+      <div className="hidden grid-cols-3 items-center bg-menus px-14 py-4 dark:bg-menus-dark md:grid">
+        <Link className="justify-self-star group inline-flex" to={"/"}>
           <CodeXml className="mr-3 text-accent group-hover:text-accent-dark" />{" "}
-          <span className="hidden lg:block text-icon transition-colors group-hover:text-icon-hover">
+          <span className="hidden text-icon transition-colors group-hover:text-icon-hover lg:block">
             Gavin Normand
           </span>
         </Link>
         <div className="inline-flex justify-center">
-          <div className="pb-1.5 border-b-2 border-accent">
+          <div className="border-b-2 border-accent pb-1.5">
             <Link
-              className="text-icon transition-colors hover:text-icon-hover mx-3"
+              className="mx-3 text-icon transition-colors hover:text-icon-hover"
               to={"/about"}
             >
               About
             </Link>
             <Link
-              className="text-icon transition-colors hover:text-icon-hover mx-3"
+              className="mx-3 text-icon transition-colors hover:text-icon-hover"
               to={"/projects"}
             >
               Projects
             </Link>
             <Link
-              className="text-icon transition-colors hover:text-icon-hover mx-3"
+              className="mx-3 text-icon transition-colors hover:text-icon-hover"
               to={"/experiences"}
             >
               Experiences
             </Link>
             <Link
-              className="text-icon transition-colors hover:text-icon-hover mx-3"
+              className="mx-3 text-icon transition-colors hover:text-icon-hover"
               to={"/contact"}
             >
               Contact
             </Link>
             <a
-              className="text-icon transition-colors hover:text-icon-hover mx-3"
+              className="mx-3 text-icon transition-colors hover:text-icon-hover"
               href={"/resume.pdf"}
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ function Nav() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="grid grid-cols-2 md:hidden justify-between bg-menus dark:bg-menus-dark py-4 px-6">
+      <div className="grid grid-cols-2 justify-between bg-menus px-6 py-4 dark:bg-menus-dark md:hidden">
         <button
           className="text-icon hover:text-icon-hover"
           aria-label="Toggle menu"

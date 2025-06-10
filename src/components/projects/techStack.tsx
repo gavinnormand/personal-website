@@ -6,7 +6,7 @@ interface TechStackProps {
 
 const TechStack: React.FC<TechStackProps> = ({ tags }) => {
   return (
-    <div className="flex flex-row gap-2 flex-wrap">
+    <div className="flex flex-row flex-wrap gap-2">
       {tags.map((text) => (
         <Tech text={text} />
       ))}

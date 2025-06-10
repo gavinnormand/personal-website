@@ -115,7 +115,7 @@ const projects = [
 function Projects() {
   return (
     <div className="bg-background dark:bg-background-dark">
-      <h1 className="text-4xl pt-8 pl-8 lg:pl-16 font-semibold text-accent dark:text-accent">
+      <h1 className="pl-8 pt-8 text-4xl font-semibold text-accent dark:text-accent lg:pl-16">
         Projects
       </h1>
       <ProjectGrid projects={projects} />

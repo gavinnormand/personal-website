@@ -18,10 +18,10 @@ interface ProjectGridProps {
 
 const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
   return (
-    <div className="justify-self-center py-8 grid grid-cols-1 mdlg:grid-cols-2 xl:grid-cols-3 gap-6 bg-background dark:bg-background-dark">
-            {projects.map((projectInfo) => (
-                <ProjectCard {... projectInfo}/>
-            ))}
+    <div className="grid grid-cols-1 gap-6 justify-self-center bg-background py-8 dark:bg-background-dark mdlg:grid-cols-2 xl:grid-cols-3">
+      {projects.map((projectInfo) => (
+        <ProjectCard {...projectInfo} />
+      ))}
     </div>
   );
 };

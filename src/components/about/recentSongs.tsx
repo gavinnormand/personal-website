@@ -22,10 +22,10 @@ export default function RecentSongs() {
   }, []);
 
   return (
-    <div className="bg-menus dark:bg-menus-dark p-4 rounded-xl mt-4">
-      <h2 className="inline-flex items-center text-xl font-semibold mb-4 text-primary-dark">
+    <div className="mt-4 rounded-xl bg-menus p-4 dark:bg-menus-dark">
+      <h2 className="mb-4 inline-flex items-center text-xl font-semibold text-primary-dark">
         {" "}
-        <SiSpotify className="text-3xl text-accent mr-3" /> What I'm Listening
+        <SiSpotify className="mr-3 text-3xl text-accent" /> What I'm Listening
         To:
       </h2>
       {loading ? (
@@ -37,7 +37,7 @@ export default function RecentSongs() {
               <img
                 src={song.image?.[1]?.["#text"] || ""}
                 alt={song.name}
-                className="w-12 h-12 rounded object-cover"
+                className="h-12 w-12 rounded object-cover"
               />
               <div>
                 <a

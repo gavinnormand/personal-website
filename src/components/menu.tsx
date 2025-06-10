@@ -9,45 +9,45 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="absolute top-16 left-0 w-full bg-menus dark:bg-menus-dark shadow-lg z-50">
+    <div className="absolute left-0 top-16 z-50 w-full bg-menus shadow-lg dark:bg-menus-dark">
       <div className="flex flex-col items-center">
         <Link
-          className="text-icon hover:text-icon-hover py-2"
+          className="py-2 text-icon hover:text-icon-hover"
           to={"/"}
           onClick={onClose}
         >
           Home
         </Link>
         <Link
-          className="text-icon hover:text-icon-hover py-2"
+          className="py-2 text-icon hover:text-icon-hover"
           to={"/about"}
           onClick={onClose}
         >
           About
         </Link>
         <Link
-          className="text-icon hover:text-icon-hover py-2"
+          className="py-2 text-icon hover:text-icon-hover"
           to={"/projects"}
           onClick={onClose}
         >
           Projects
         </Link>
         <Link
-          className="text-icon hover:text-icon-hover py-2"
+          className="py-2 text-icon hover:text-icon-hover"
           to={"/experiences"}
           onClick={onClose}
         >
           Experiences
         </Link>
         <Link
-          className="text-icon hover:text-icon-hover py-2"
+          className="py-2 text-icon hover:text-icon-hover"
           to={"/contact"}
           onClick={onClose}
         >
           Contact
         </Link>
         <a
-          className="text-icon hover:text-icon-hover py-2"
+          className="py-2 text-icon hover:text-icon-hover"
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"

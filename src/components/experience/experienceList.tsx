@@ -25,10 +25,10 @@ interface ExperienceListProps {
 
 const ExperienceList: React.FC<ExperienceListProps> = ({ experiences }) => {
   return (
-    <div className="flex flex-col gap-4 p-4 px-4 md:px-8 lg:px-16 bg-background dark:bg-background-dark">
-            {experiences.map((experienceInfo) => (
-                <ExperienceCard {... experienceInfo}/>
-            ))}
+    <div className="flex flex-col gap-4 bg-background p-4 px-4 dark:bg-background-dark md:px-8 lg:px-16">
+      {experiences.map((experienceInfo) => (
+        <ExperienceCard {...experienceInfo} />
+      ))}
     </div>
   );
 };
