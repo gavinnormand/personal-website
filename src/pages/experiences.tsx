@@ -50,7 +50,7 @@ const experiences = [
     endDate: null,
     location: "East Windsor, NJ",
     description:
-      "Provides IT support by configuring new machines, managing network infrastructure, and providing on-call technical support to resolve hardware and software issues.",
+      "Providing IT support by configuring new machines, managing network infrastructure, and providing on-call technical support to resolve hardware and software issues.",
     logo: {
       src: "/experiences/cmdsleep.png",
       alt: "CMD Sleep Logo",
