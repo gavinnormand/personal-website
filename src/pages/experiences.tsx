@@ -29,7 +29,7 @@ const experiences = [
       link: "https://www.teachfirstbyte.com/",
     },
   },
-  {
+  /*{
     position: "Teaching Assistant",
     company: "Northeastern University",
     startDate: { month: "July", year: "2025" },
@@ -42,7 +42,7 @@ const experiences = [
       alt: "Northeastern Khoury Logo",
       link: "https://www.khoury.northeastern.edu/",
     },
-  },
+  },*/
   {
     position: "Part-Time IT Consultant",
     company: "CMD Sleep Disorder Center",
