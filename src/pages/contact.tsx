@@ -46,7 +46,7 @@ function Contact() {
 
   return (
     <div className="grid min-h-[calc(100vh-128px)] grid-cols-1 bg-background py-8 dark:bg-background-dark md:grid-cols-2">
-      <div className="mx-8 mb-8 flex flex-col items-start text-primary dark:text-primary-dark md:ml-16 md:mr-0">
+      <div className="mx-8 mb-8 flex flex-col items-start text-primary dark:text-primary-dark lg:ml-16 md:mr-0">
         <h1 className="text-4xl font-semibold text-accent">Contact Info</h1>
         <p className="pt-2 text-primary dark:text-primary-dark">
           Feel free to use the info below to reach out with any questions,

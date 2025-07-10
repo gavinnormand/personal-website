@@ -85,7 +85,7 @@ const toolsAndPlatforms = [
 function About() {
   return (
     <div className="grid grid-cols-1 bg-background py-8 dark:bg-background-dark md:grid-cols-2">
-      <div className="mx-8 mb-4 flex flex-col items-start text-primary dark:text-primary-dark lg:ml-16 lg:mr-0">
+      <div className="mx-8 mb-4 flex flex-col items-start text-primary dark:text-primary-dark lg:ml-16 md:mr-0">
         <h1 className="text-4xl font-semibold text-accent dark:text-accent">
           About Me
         </h1>

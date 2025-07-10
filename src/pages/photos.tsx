@@ -30,8 +30,8 @@ const images = [
 
 function Photos() {
   return (
-    <div className="bg-background px-4 py-12 dark:bg-background-dark sm:px-8">
-      <h1 className="mb-12 ml-8 text-4xl font-bold text-accent sm:ml-4">
+    <div className="px-auto bg-background py-8 dark:bg-background-dark md:px-8">
+      <h1 className="mb-12 ml-8 text-4xl font-bold text-accent">
         Pictures I've Taken:
       </h1>
       <div className="grid w-full grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] justify-items-center gap-12">
