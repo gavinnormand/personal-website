@@ -24,6 +24,27 @@ const projects = [
     },
   },
   {
+    name: "Clue Sidekick",
+    description:
+      "A web-based assistant for the board game Clue/Cluedo that helps you track cards and deduce the solution through logical elimination. Clue Sidekick automatically processes each turn's information to reveal which cards players hold and identifies solutions, giving you a strategic edge in solving the case.",
+    githubUrl: "https://github.com/gavinnormand/clue-sidekick/",
+    liveUrl: "https://cluesidekick.vercel.app/",
+    stack: [
+      "Vue 3",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+      "Spring Boot 3.5",
+      "Docker",
+      "AWS LightSail",
+      "Vite",
+    ],
+    image: {
+      src: "/projects/cluesidekick.png",
+      alt: "Clue Sidekicks's Landing Page",
+    },
+  },
+  {
     name: "Personal Portfolio",
     description:
       "The personal portfolio website that you are currently viewing! I wanted to build a space that showcases my projects, experiences, and skills as a software engineer, but also serves as a platform to share my pictures, interests, and a bit about myself.",
