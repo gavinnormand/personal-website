@@ -45,6 +45,25 @@ const projects = [
     },
   },
   {
+    name: "CMD Sleep Website",
+    description:
+      "This is a full stack website built for CMD Sleep clinic as a freelance commission. It features a modern, responsive, and mobile friendly design that provides information about the clinic's services, patient portal, doctors, directions, forms, and contact details.",
+    githubUrl: "https://github.com/gavinnormand/cmdsleep",
+    liveUrl: "https://cmdsleep.com/",
+    stack: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Express.js",
+      "AWS LightSail",
+    ],
+    image: {
+      src: "/projects/cmdsleep.png",
+      alt: "CMD Sleep's Landing Page",
+    },
+  },
+  {
     name: "Personal Portfolio",
     description:
       "The personal portfolio website that you are currently viewing! I wanted to build a space that showcases my projects, experiences, and skills as a software engineer, but also serves as a platform to share my pictures, interests, and a bit about myself.",

@@ -48,6 +48,7 @@ const frameworksAndLibraries = [
   // Backend / Full-stack
   "Node.js",
   "Spring Boot",
+  "Express.js",
   "Bun",
   "Flask",
   "tRPC",
