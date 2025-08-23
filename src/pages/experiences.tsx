@@ -29,6 +29,20 @@ const experiences = [
       link: "https://www.teachfirstbyte.com/",
     },
   },
+  {
+    position: "Research Assistant",
+    company: "Northeastern University",
+    startDate: { month: "August", year: "2025" },
+    endDate: null,
+    location: "Boston, MA",
+    description:
+      "Using autonomous workflows and LLM APIs to build an AI-powered assistant that integrates course materials to answer students’ questions automatically with contextual retrieval methods for accurate, real-time, and relevant responses.",
+    logo: {
+      src: "/experiences/northeastern.png",
+      alt: "Northeastern Logo",
+      link: "https://www.khoury.northeastern.edu/people/hsiao-an-justin-wang/",
+    },
+  },
   /*{
     position: "Teaching Assistant",
     company: "Northeastern University",
