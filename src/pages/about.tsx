@@ -43,7 +43,7 @@ const frameworksAndLibraries = [
   "React",
   "Vue",
   "Next.js",
-  "Tailwind CSS",
+  "TailwindCSS",
 
   // Backend / Full-stack
   "Node.js",
