@@ -43,20 +43,20 @@ const experiences = [
       link: "https://www.khoury.northeastern.edu/people/hsiao-an-justin-wang/",
     },
   },
-  /*{
+  {
     position: "Teaching Assistant",
     company: "Northeastern University",
-    startDate: { month: "July", year: "2025" },
+    startDate: { month: "August", year: "2025" },
     endDate: null,
     location: "Boston, MA",
     description:
-      "Supporting the understanding of course material for 80+ students in Foundations of Cybersecurity by hosting office hours, answering outstanding questions, and grading assignments.",
+      "Supporting the understanding of course material for 475+ students in Object Oriented Design by leading lab sessions, hosting office hours, answering outstanding questions, and grading assignments.",
     logo: {
       src: "/experiences/khoury.png",
       alt: "Northeastern Khoury Logo",
       link: "https://www.khoury.northeastern.edu/",
     },
-  },*/
+  },
   {
     position: "Part-Time IT Consultant",
     company: "CMD Sleep Disorder Center",
