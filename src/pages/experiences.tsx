@@ -2,6 +2,20 @@ import ExperienceList from "../components/experience/experienceList";
 
 const experiences = [
   {
+    position: "Software Developer Co-op",
+    company: "Smartleaf",
+    startDate: { month: "January", year: "2026" },
+    endDate: null,
+    location: "Boston, MA",
+    description:
+      "Incoming Spring 2026 Software Developer Co-op at Smartleaf working on the application team.",
+    logo: {
+      src: "/experiences/smartleaf.jpg",
+      alt: "Smartleaf Logo",
+      link: "https://smartleaf.com/",
+    },
+  },
+  {
     position: "Software Developer",
     company: "Sandbox",
     startDate: { month: "January", year: "2025" },
