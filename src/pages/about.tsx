@@ -93,7 +93,7 @@ function About() {
           About Me
         </h1>
         <p className="text-l pt-4 text-primary dark:text-primary-dark">
-          Hi! My name is Gavin Normand and I am a rising second-year student at
+          Hi! My name is Gavin Normand and I am a second-year student at
           Northeastern University pursuing a bachelor's degree in Computer
           Science with a concentration in Software and a minor in Mathematics. I
           expect to graduate in December of 2027.
