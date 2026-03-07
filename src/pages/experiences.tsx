@@ -2,13 +2,13 @@ import ExperienceList from "../components/experience/experienceList";
 
 const experiences = [
   {
-    position: "Software Developer Co-op",
+    position: "Software Engineering Co-op",
     company: "Smartleaf",
     startDate: { month: "January", year: "2026" },
     endDate: null,
     location: "Boston, MA",
     description:
-      "Incoming Spring 2026 Software Developer Co-op at Smartleaf working on the application team.",
+      "Working on the platform team to build new features for a large scale ruby on rails financial software application.",
     logo: {
       src: "/experiences/smartleaf.jpg",
       alt: "Smartleaf Logo",
@@ -16,13 +16,13 @@ const experiences = [
     },
   },
   {
-    position: "Software Developer",
+    position: "Project Lead & Software Developer",
     company: "Sandbox",
     startDate: { month: "January", year: "2025" },
     endDate: null,
     location: "Boston, MA",
     description:
-      "Building Good Dog Licensing, a client-based project, that connects independent musicians with media makers, for Green Line Records at Northeastern University.",
+      "Leading the development of Good Dog Licensing, a client-based project, that connects independent musicians with media makers, for Green Line Records at Northeastern University.",
     logo: {
       src: "/experiences/sandbox.png",
       alt: "Sandbox Logo",
@@ -44,30 +44,16 @@ const experiences = [
     },
   },
   {
-    position: "Research Assistant",
+    position: "Resident Assistant",
     company: "Northeastern University",
     startDate: { month: "August", year: "2025" },
     endDate: null,
     location: "Boston, MA",
     description:
-      "Using autonomous workflows and LLM APIs to build an AI-powered assistant that integrates course materials to answer students’ questions automatically with contextual retrieval methods for accurate, real-time, and relevant responses.",
+      "Supporting 30+ residents through community-building events, enforcing university policies, and being a resource for conflict resolution and peer mentorship.",
     logo: {
       src: "/experiences/northeastern.png",
       alt: "Northeastern Logo",
-      link: "https://www.khoury.northeastern.edu/people/hsiao-an-justin-wang/",
-    },
-  },
-  {
-    position: "Teaching Assistant",
-    company: "Northeastern University",
-    startDate: { month: "August", year: "2025" },
-    endDate: null,
-    location: "Boston, MA",
-    description:
-      "Supporting the understanding of course material for 475+ students in Object Oriented Design by leading lab sessions, hosting office hours, answering outstanding questions, and grading assignments.",
-    logo: {
-      src: "/experiences/khoury.png",
-      alt: "Northeastern Khoury Logo",
       link: "https://www.khoury.northeastern.edu/",
     },
   },
@@ -86,20 +72,6 @@ const experiences = [
     },
   },
   {
-    position: "Resident Assistant",
-    company: "Northeastern University",
-    startDate: { month: "August", year: "2025" },
-    endDate: null,
-    location: "Boston, MA",
-    description:
-      "Supporting 30+ residents through community-building events, enforcing university policies, and being a resource for conflict resolution and peer mentorship.",
-    logo: {
-      src: "/experiences/northeastern.png",
-      alt: "Northeastern Logo",
-      link: "https://www.khoury.northeastern.edu/",
-    },
-  },
-  {
     position: "Peer Tutor",
     company: "Northeastern University",
     startDate: { month: "January", year: "2025" },
@@ -111,6 +83,34 @@ const experiences = [
       src: "/experiences/knack.png",
       alt: "Knack Tutoring Logo",
       link: "https://northeasternpeertutoring.sites.northeastern.edu/",
+    },
+  },
+  {
+    position: "Research Assistant",
+    company: "Northeastern University",
+    startDate: { month: "August", year: "2025" },
+    endDate: { month: "December", year: "2025" },
+    location: "Boston, MA",
+    description:
+      "Using autonomous workflows and LLM APIs to build an AI-powered assistant that integrates course materials to answer students’ questions automatically with contextual retrieval methods for accurate, real-time, and relevant responses.",
+    logo: {
+      src: "/experiences/northeastern.png",
+      alt: "Northeastern Logo",
+      link: "https://www.khoury.northeastern.edu/people/hsiao-an-justin-wang/",
+    },
+  },
+  {
+    position: "Teaching Assistant",
+    company: "Northeastern University",
+    startDate: { month: "August", year: "2025" },
+    endDate: { month: "December", year: "2025" },
+    location: "Boston, MA",
+    description:
+      "Supporting the understanding of course material for 475+ students in Object Oriented Design by leading lab sessions, hosting office hours, answering outstanding questions, and grading assignments.",
+    logo: {
+      src: "/experiences/khoury.png",
+      alt: "Northeastern Khoury Logo",
+      link: "https://www.khoury.northeastern.edu/",
     },
   },
   {

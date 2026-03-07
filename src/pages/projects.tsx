@@ -45,6 +45,25 @@ const projects = [
     },
   },
   {
+    name: "Vennify",
+    description:
+      "A tool that lets you compare and modify music playlists (either your own or public ones) to discover shared tracks, identify differences, and further curate your playlists. The app analyzes playlists in a side-by-side venn diagram UI, making it easy to explore overlapping taste and build better playlists together.",
+    githubUrl: "https://github.com/gavinnormand/vennify/",
+    liveUrl: "https://vennify.vercel.app/",
+    stack: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Next.js",
+      "Vercel",
+    ],
+    image: {
+      src: "/projects/vennify.png",
+      alt: "Vennify's Landing Page",
+    },
+  },
+  {
     name: "CMD Sleep Website",
     description:
       "This is a full stack website built for CMD Sleep clinic as a freelance commission. It features a modern, responsive, and mobile friendly design that provides information about the clinic's services, patient portal, doctors, directions, forms, and contact details.",
