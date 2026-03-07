@@ -96,7 +96,8 @@ function About() {
           Hi! My name is Gavin Normand and I am a second-year student at
           Northeastern University pursuing a bachelor's degree in Computer
           Science with a concentration in Software and a minor in Mathematics. I
-          expect to graduate in December of 2027.
+          expect to graduate in December of 2027. Currently I am on co-op as a
+          Software Engineer at Smartleaf!
         </p>
         <p className="text-l pt-4 text-primary dark:text-primary-dark">
           I spend a lot of my time working on projects through Sandbox,
