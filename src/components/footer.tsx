@@ -4,7 +4,8 @@ function Footer() {
   return (
     <div className="grid w-full grid-cols-3 items-center bg-menus px-4 py-4 dark:bg-menus-dark lg:px-16">
       <p className="justify-self-start text-icon-hover">
-        © 2025 Gavin <span className="hidden md:inline"> Normand</span>
+        © {new Date().getFullYear()} Gavin{" "}
+        <span className="hidden md:inline"> Normand</span>
       </p>
       <div className="flex flex-row items-center justify-center">
         <a
