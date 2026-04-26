@@ -2,6 +2,20 @@ import ExperienceList from "../components/experience/experienceList";
 
 const experiences = [
   {
+    position: "Incoming Software Engineering Internship",
+    company: "Acorns",
+    startDate: { month: "June", year: "2026" },
+    endDate: null,
+    location: "Boston, MA",
+    description:
+      "Incoming Software Engineering Intern Summer 2026",
+    logo: {
+      src: "/experiences/acorns.jpg",
+      alt: "Acorns Logo",
+      link: "https://acorns.com/",
+    },
+  },
+  {
     position: "Software Engineering Co-op",
     company: "Smartleaf",
     startDate: { month: "January", year: "2026" },
