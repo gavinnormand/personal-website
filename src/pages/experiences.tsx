@@ -6,7 +6,7 @@ const experiences = [
     company: "Acorns",
     startDate: { month: "June", year: "2026" },
     endDate: null,
-    location: "Boston, MA",
+    location: "Remote",
     description:
       "Incoming Software Engineering Intern Summer 2026",
     logo: {
