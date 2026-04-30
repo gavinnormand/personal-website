@@ -72,12 +72,12 @@ const projects = [
     stack: [
       "React",
       "TypeScript",
-      "JavaScript",
       "Tailwind CSS",
       "Vercel",
       "Python",
       "FastAPI",
-      "AWS",
+      "Docker",
+      "AWS Lightsail",
     ],
     image: {
       src: "/projects/svdcompress.png",
