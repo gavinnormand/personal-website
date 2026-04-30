@@ -64,6 +64,27 @@ const projects = [
     },
   },
   {
+    name: "SVD Compress",
+    description:
+      "A tool that lets you upload any image and watch it reconstruct itself through the math of Singular Value Decomposition, dragging a slider to explore how few components it takes to recover a recognizable picture and see the live quality-versus-filesize trade-off in real time.",
+    githubUrl: "https://github.com/gavinnormand/svdcompress/",
+    liveUrl: "https://svdcompress.vercel.app/",
+    stack: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Vercel",
+      "Python",
+      "FastAPI",
+      "AWS",
+    ],
+    image: {
+      src: "/projects/svdcompress.png",
+      alt: "SVD Compress's Landing Page",
+    },
+  },
+  {
     name: "CMD Sleep Website",
     description:
       "This is a full stack website built for CMD Sleep clinic as a freelance commission. It features a modern, responsive, and mobile friendly design that provides information about the clinic's services, patient portal, doctors, directions, forms, and contact details.",
