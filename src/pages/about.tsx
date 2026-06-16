@@ -29,6 +29,7 @@ const languages = [
   "Python",
   "JavaScript",
   "TypeScript",
+  "Ruby",
   "C",
   "C#",
   "C++",
@@ -46,6 +47,7 @@ const frameworksAndLibraries = [
   "Tailwind CSS",
 
   // Backend / Full-stack
+  "Rails",
   "Node.js",
   "Spring Boot",
   "Express.js",
@@ -93,11 +95,20 @@ function About() {
           About Me
         </h1>
         <p className="text-l pt-4 text-primary dark:text-primary-dark">
-          Hi! My name is Gavin Normand and I am a second-year student at
+          Hi! My name is Gavin Normand and I am a third-year student at
           Northeastern University pursuing a bachelor's degree in Computer
           Science with a concentration in Software and a minor in Mathematics. I
-          expect to graduate in December of 2027. Currently I am on co-op as a
-          Software Engineer at Smartleaf!
+          expect to graduate in December of 2027.
+        </p>
+        <p className="text-l pt-4 text-primary dark:text-primary-dark">
+          Currently I am a Software Engineering Intern at{" "}
+          <a
+            className="text-accent underline hover:decoration-wavy"
+            href="https://www.acorns.com/"
+          >
+            Acorns
+          </a>
+          ! Previously I have worked as a Software Engineering Co-op at Smartleaf.
         </p>
         <p className="text-l pt-4 text-primary dark:text-primary-dark">
           I spend a lot of my time working on projects through Sandbox,
