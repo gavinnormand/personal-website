@@ -85,6 +85,23 @@ const projects = [
     },
   },
   {
+    name: "Group Leader",
+    description:
+      "A group scorekeeping iOS app where you invite friends with a join code, define custom point metrics, and post captioned updates to award each other points across those metrics, with per-metric leaderboards filterable by all-time, 30-day, 7-day, or 1-day windows, plus member profiles, search, and admin controls for managing the group.",
+    githubUrl: "https://github.com/gavinnormand/group-leader/",
+    liveUrl: "https://appetize.io/app/b_myrsckuh63623eir6ddv5g6qda?device=iphone17pro&osVersion=26.0&appearance=dark&autoplay=true&toolbar=false",
+    stack: [
+      "Swift",
+      "SwiftUI",
+      "Supabase",
+      "PostgreSQL",
+    ],
+    image: {
+      src: "/projects/groupleader.png",
+      alt: "Group Leader's Landing Page",
+    },
+  },
+  {
     name: "CMD Sleep Website",
     description:
       "This is a full stack website built for CMD Sleep clinic as a freelance commission. It features a modern, responsive, and mobile friendly design that provides information about the clinic's services, patient portal, doctors, directions, forms, and contact details.",
